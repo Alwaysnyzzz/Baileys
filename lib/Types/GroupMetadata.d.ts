@@ -3,9 +3,6 @@ export type GroupParticipant = (Contact & {
     isAdmin?: boolean;
     isSuperAdmin?: boolean;
     admin?: 'admin' | 'superadmin' | null;
-    lid?: string;
-    phoneNumber?: string;
-    rawJid?: string;
 });
 export type ParticipantAction = 'add' | 'remove' | 'promote' | 'demote';
 export interface GroupMetadata {
